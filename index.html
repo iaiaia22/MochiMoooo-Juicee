@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochiMoo Juice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="gambar/logo.png" alt="MochiMoo Juice logo" class="logo">
+
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+        </div>
+
+        <div class="nav-extra">
+            <a href="#" id="cart-icon">
+                <i data-feather="shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+
+            <div class="text">
+                <h1 id="slide-title">Mochiiee Daifuku</h1>
+                <p id="slide-desc">One bite and you're hooked</p>
+                <a href="#menu" class="lihatselengkapnya" id="slide-btn">Lihat Selengkapnya</a>
+            </div>
+
+            <div class="image-wrapper">
+                <img src="gambar/mocipage.png" alt="mocipage" class="slide-img active">
+                <img src="gambar/juspage.png" alt="juspage" class="slide-img">
+
+                <button class="arrow-btn prev" id="prevBtn">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <button class="arrow-btn next" id="nextBtn">
+                    <i data-feather="chevron-right"></i>
+                </button>
+            </div>
+        </main>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="moci-section">
+            <h2 class="menu-title">{ Mochie's Menu }</h2>
+            <p class="menu-subtitle">All varian only 7K</p>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="gambar/strawberrychoco.png" alt="strowberrychoco">
+                    <P>Strawberry Choco</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Strawberry Choco">ORDER</a>
+                        <button class="cart-add-btn" data-name="Strawberry Choco" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="gambar/strawberrycream.png" alt="strawberrycream">
+                    <P>Strawberry Cream</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Strawberry Cream">ORDER</a>
+                        <button class="cart-add-btn" data-name="Strawberry Cream" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="gambar/manggocream.png" alt="manggocream">
+                    <P>Manggo Cream</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Manggo Cream">ORDER</a>
+                        <button class="cart-add-btn" data-name="Manggo Cream" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="gambar/chococrunchy.png" alt="chococrunchy">
+                    <P>Choco Crunchy</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Choco Crunchy">ORDER</a>
+                        <button class="cart-add-btn" data-name="Choco Crunchy" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+             <div class="jus-section">
+                <h2 class="menu-title jus-title">Juice's Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                    <img src="gambar/alpukat.png" alt="alpukat">
+                    <P class="jus-name">Jus Alpukat (8K)</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Jus Alpukat">ORDER</a>
+                        <button class="cart-add-btn" data-name="Jus Alpukat" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="gambar/jambu.png" alt="jambu">
+                    <P class="jus-name">Jus Jambu (7K)</P>
+                    <div class="order-row">
+                        <a href="#" class="order-btn" data-name="Jus Jambu">ORDER</a>
+                        <button class="cart-add-btn" data-name="Jus Jambu" title="Tambah ke keranjang"><i data-feather="shopping-cart"></i></button>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="review-section" id="review">
+     <h2 class="review-title">{ CUSTOMER REVIEWS }</h2>
+     <div class="review-form-wrapper">
+        <input type="text" id="review-name" placeholder="Nama kamu..." maxlength="30"/>
+        <textarea id="review-text" placeholder="Tulis ulasanmu di sini..." maxlength="150" rows="2"></textarea>
+        <div class="bintang" id="star-picker">
+            <span data-val="1">★</span>
+            <span data-val="2">★</span>
+            <span data-val="3">★</span>
+            <span data-val="4">★</span>
+            <span data-val="5">★</span>
+        </div>
+        <button id="submit-review">Kirim Ulasan</button>
+     </div>   
+        <div class="review-grid" id="review-grid"></div>
+    </section>
+
+<!--<section class="order-section">
+  <a href="#menu" class="order-now-btn">ORDER NOW</a>
+</section>-->
+
+<div class="cart-overlay" id="cartOverlay">
+  <div class="cart-modal">
+    <div class="cart-header">
+      <h3> Keranjang</h3>
+      <button id="closeCart"><i data-feather="x"></i></button>
+    </div>
+
+    <div id="cart-items"></div>
+    <div class="cart-total" id="cart-total-section"></div>
+
+    <div class="cart-form">
+      <input type="text" id="nama" placeholder="Nama kamu" />
+      <input type="text" id="kelas" placeholder="Kelas kamu" />
+    </div>
+
+    <button class="wa-btn" id="orderWa">
+      <i data-feather="message-circle"></i> ORDER via WhatsApp
+    </button>
+  </div>
+</div>
+
+<!-- Toast Notifikasi -->
+<div class="toast-notif" id="toastNotif"></div>
+
+<footer class="footer">
+  <p class="footer-title">Find Us On Instagram</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/ayshchan._?igsh=cnNnc3dscmtoc3Y0" target="_blank" class="footer-ig">
+      <i data-feather="instagram"></i> @ayshchan._
+    </a>
+    <a href="https://www.instagram.com/rikaya_ia?igsh=MXZ0ZG93aXpyYjd6Ng==" target="_blank" class="footer-ig">
+      <i data-feather="instagram"></i> @rikaya_ia
+    </a>
+    <a href="https://www.instagram.com/reeiramta?igsh=MXZsZ3N4MTR2cjcybw==" target="_blank" class="footer-ig">
+      <i data-feather="instagram"></i> @reeiramta
+    </a>
+  </div>
+  <p class="footer-copy">© 2025 MochiMoo Juice. All rights reserved.</p>
+</footer>
+
+    <script>
+        feather.replace();
+    </script>
+
+    <!-- Firebase CDN -->
+<script type="module" src="script/script.js"></script>
+</body>
+</html>
